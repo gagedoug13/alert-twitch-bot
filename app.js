@@ -56,11 +56,7 @@ const onMessageHandler = (target, context, message, self) => {
 
 
     
-    // const trashTalk = ['wow, look who actually showed up', 'yeah, keep talkin LUL', 'what does that even mean? am i the robot or you?', 'psshh, im outta here. yall trippin']
-    // if (context.username == 'tank_vjr' && currentWord < trashTalk.length) {
-    //     client.say('nation_live', `@ ${context.username} ${trashTalk[currentWord]}`)
-    //     currentWord++
-    // }
+   
 
     if (context.username == 'maplebento' && arrivingViewers.maplebento == false) {
         client.say('nation_live', 'YOOOOO ITS YUNG FUCKIN DAEMON. LESGOOO. Welcome in bruh.')
@@ -78,3 +74,9 @@ client.on('message', onMessageHandler)
 client.on('connected', () => console.log('connected'))
 
 client.connect()
+
+ // const trashTalk = ['wow, look who actually showed up', 'yeah, keep talkin LUL', 'what does that even mean? am i the robot or you?', 'psshh, im outta here. yall trippin']
+    // if (context.username == 'tank_vjr' && currentWord < trashTalk.length) {
+    //     client.say('nation_live', `@ ${context.username} ${trashTalk[currentWord]}`)
+    //     currentWord++
+    // }
